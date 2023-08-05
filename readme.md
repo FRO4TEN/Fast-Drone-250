@@ -1,3 +1,34 @@
+cd Fast-Drone-250
+source devel/setup.bash
+sh shfiles/rspx4.sh
+rosrun mavros mavcmd long 511 105 5000 0 0 0 0 0 & sleep 1;
+rosrun mavros mavcmd long 511 31 5000 0 0 0 0 0 & sleep 1;
+rostopic echo /vins_fusion/imu_propagate 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <font size=6> **从零制作自主空中机器人** </font>
 
 本文档是视频教程[从零制作自主空中机器人](https://www.bilibili.com/video/BV1WZ4y167me?p=1)的配套文档,github链接为https://github.com/ZJU-FAST-Lab/Fast-Drone-250
