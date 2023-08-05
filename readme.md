@@ -2,8 +2,8 @@
 cd Fast-Drone-250
 source devel/setup.bash
 sh shfiles/rspx4.sh
-rosrun mavros mavcmd long 511 105 5000 0 0 0 0 0 & sleep 1;
-rosrun mavros mavcmd long 511 31 5000 0 0 0 0 0 & sleep 1;
+rosrun mavros mavcmd long 511 105 5000 0 0 0 0 0 & sleep 1
+rosrun mavros mavcmd long 511 31 5000 0 0 0 0 0 & sleep 1
 rostopic echo /vins_fusion/imu_propagate 
 '''
 
